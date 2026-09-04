@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order | Rising Star Restaurant</title>
+
+    <link rel="stylesheet" href="smart project.css">
+
+</head>
+
+
+<body class="order-page">
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="nav-bar">
+
+        <h1 class="logo">
+            Rising Star <span>Restaurant</span>
+        </h1>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="index.html#products">Menu</a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- ORDER FORM -->
+
+    <main class="order-container">
+
+        <div class="order-box">
+
+            <h1>
+                Place Your Order
+            </h1>
+
+            <p>
+                Fill in your details and we'll prepare your order.
+            </p>
+
+
+            <form>
+
+
+                <label for="food">
+                    Selected Food
+                </label>
+
+                <input type="text" id="food" name="food" placeholder="Enter your food">
+
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input type="tel" id="phone" name="phone" placeholder="+234..." required>
+
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+
+
+                <label for="quantity">
+                    Quantity
+                </label>
+
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+
+                <label for="address">
+                    Delivery Address
+                </label>
+
+                <textarea id="address" name="address" rows="4" placeholder="Enter your delivery address"
+                    required></textarea>
+
+
+                <label for="instructions">
+                    Special Instructions
+                </label>
+
+                <textarea id="instructions" name="instructions" rows="4" placeholder="Any special requests?"></textarea>
+
+
+                <button type="submit" class="submit-order">
+
+                    Place Order
+
+                </button>
+
+
+            </form>
+
+
+            <a href="./smart project.html#products" class="back-menu">
+
+                ← Back To Menu
+
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Rising Star Restaurant.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        /*
+        Get the food name from the URL.
+
+        Example:
+
+        order.html?food=Fufu%20and%20Ogbono%20Soup
+        */
+
+        const params =
+            new URLSearchParams(window.location.search);
+
+        const food =
+            params.get("food");
+
+
+        if (food) {
+
+            document.getElementById("food").value =
+                food;
+
+        }
+
+
+        /*
+        Prevent the form from refreshing the page
+        for now.
+
+        Later we can connect this to WhatsApp,
+        email, Firebase or a database.
+        */
+
+        const form =
+            document.querySelector("form");
+
+
+        form.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            alert(
+                "Thank you! Your order has been received. remember to pay ooo  this is my acc number  0001254367"
+            
+            );
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenLife Herbal Pharmacy</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5fff6;
+color:#222;
+}
+
+header{
+position:sticky;
+top:0;
+background:#0c5c2d;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:white;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#9cff9c;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#23b14d;
+color:white;
+text-decoration:none;
+border-radius:30px;
+transition:.4s;
+}
+
+.btn:hover{
+background:#0b7c33;
+transform:translateY(-5px);
+box-shadow:0 15px 30px rgba(0,0,0,.3);
+}
+
+section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+font-size:38px;
+margin-bottom:50px;
+color:#0c5c2d;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,.12);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-12px);
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#0c5c2d;
+}
+
+.price{
+font-size:24px;
+font-weight:bold;
+margin:15px 0;
+color:#1f8c42;
+}
+
+.order-btn{
+display:inline-block;
+background:#23b14d;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:25px;
+transition:.3s;
+}
+
+.order-btn:hover{
+background:#0b7c33;
+letter-spacing:1px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.about p{
+line-height:1.8;
+}
+
+.network{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.partner{
+background:white;
+padding:35px;
+text-align:center;
+border-radius:15px;
+transition:.3s;
+box-shadow:0 8px 15px rgba(0,0,0,.1);
+}
+
+.partner:hover{
+background:#0c5c2d;
+color:white;
+transform:scale(1.05);
+}
+
+.contact{
+text-align:center;
+background:#0c5c2d;
+color:white;
+border-radius:20px;
+}
+
+.contact h2{
+margin-bottom:20px;
+}
+
+.contact p{
+margin:10px;
+}
+
+footer{
+background:#063118;
+padding:25px;
+text-align:center;
+color:white;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
+}
+
+}
+.login-btn{
+    background:#23b14d;
+    padding:10px 22px;
+    border-radius:25px;
+    transition:.4s;
+}
+
+.login-btn:hover{
+    background:white;
+    color:#0c5c2d;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">🌿 Edible Herbs</div>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#network">Network</a>
+    <a href="#contact">Contact</a>
+    <a href="login.html" class="login-btn">order</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Natural Herbal Medicine</h1>
+
+<p>Safe • Organic • Effective Herbal Treatments Delivered to Your Doorstep</p>
+
+<a href="#products" class="btn">Shop Now</a>
+
+</div>
+
+</section>
+
+<section id="products">
+
+<h2 class="title">Our Herbal Products</h2>
+
+<div class="products">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=700&q=80">
+
+<div class="card-content">
+
+<h3>Herbal Immune Booster</h3>
+
+<p>Boost your body's natural immunity.</p>
+
+<div class="price">N25,000</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=700&q=80">
+
+<div class="card-content">
+
+<h3>Organic Detox Tea</h3>
+
+<p>Cleanse your body naturally.</p>
+
+<div class="price">N18,000</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=700&q=80">
+
+<div class="card-content">
+
+<h3>Herbal Pain Relief Oil</h3>
+
+<p>Fast relief from muscle pain.</p>
+
+<div class="price">N30,000</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80">
+
+<div>
+
+<h2>healthy living</h2>
+
+<br>
+
+<p>
+
+         Here at RisingStar Restaurant we prioritize the hapiness of our customers <br>
+            by cooking african,europe and continental dishes cooked according to our customers <br>
+            satisfaction. At Rise Star Restaurant we dont only quench the hunger of our customers but <br>
+            we also provide a healthy menu to boost the growth of the human body. so please enjoy yourself with our wide
+            range menu and also remember; your apetite is our priority. 
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="network">
+
+<h2 class="title">Our Network</h2>
+
+<div class="network">
+
+<div class="partner">
+<h3>Certified Herbal Doctors</h3>
+<p>Professional consultation.</p>
+</div>
+
+<div class="partner">
+<h3>Nationwide Delivery</h3>
+<p>Fast and secure shipping.</p>
+</div>
+
+<div class="partner">
+<h3>24/7 Customer Support</h3>
+<p>Always available.</p>
+</div>
+
+<div class="partner">
+<h3>International Partners</h3>
+<p>Serving customers worldwide.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+
+
+<div class="contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 <strong>Address:</strong><br>
+Edible Herbs<br>
+25 Herbal Market Road,<br>
+Ikeja, Lagos State,<br>
+Nigeria.
+</p>
+
+<p>📞 +234 800 123 4567</p>
+
+<p>📧 info@greenlifeherbal.com</p>
+
+<p>🌐 Facebook | Instagram | WhatsApp</p>
+
+</div>
+
+</section>
+
+</section>
+
+<footer>
+
+<p>© 2026 Edible Herbs Pharmacy. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
